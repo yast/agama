@@ -52,6 +52,8 @@ export { default as Selector } from "./Selector";
 export { default as ServerError } from "./ServerError";
 export { default as ExpandableSelector } from "./ExpandableSelector";
 export { default as TreeTable } from "./TreeTable";
+export { default as Terminal } from "./Terminal";
+export { default as TerminalDialog } from "./TerminalDialog";
 export { default as CardField } from "./CardField";
 export { default as ButtonLink } from "./ButtonLink";
 export { default as EmptyState } from "./EmptyState";

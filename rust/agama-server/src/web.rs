@@ -25,6 +25,7 @@ mod event;
 mod http;
 mod service;
 mod state;
+mod terminal_ws;
 mod ws;
 
 use agama_lib::{connection, error::ServiceError};
