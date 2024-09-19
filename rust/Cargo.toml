@@ -4,7 +4,14 @@ members = [
   "agama-server",
   "agama-lib",
   "agama-locale-data",
+  "libzypp",
+  "libzypp/zypp-sys",
 ]
+
+exclude = [
+  "libzypp/gir"
+]
+
 resolver = "2"
 
 [workspace.package]

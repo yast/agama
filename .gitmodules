@@ -1,0 +1,15 @@
+[submodule "rust/libzypp/gir"]
+	path = rust/libzypp/gir
+	url = https://github.com/gtk-rs/gir
+	branch = master
+	update = none
+[submodule "rust/libzypp/gir-files"]
+	path = rust/libzypp/gir-files
+	url = https://github.com/gtk-rs/gir-files
+	branch = master
+	update = none
+[submodule "rust/libzypp/libzypp"]
+	path = rust/libzypp/libzypp
+	url = https://github.com/openSUSE/libzypp
+	branch = zyppng-staging
+	update = none
