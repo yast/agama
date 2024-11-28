@@ -40,6 +40,7 @@ const copy_files = [
   "./src/index.html",
   // TODO: consider using something more complete like https://github.com/jantimon/favicons-webpack-plugin
   "./src/assets/favicon.svg",
+  "./src/languages.json",
   { from: "./src/assets/products/*.svg", to: "assets/logos/[name][ext]" },
 ];
 
@@ -54,7 +55,7 @@ const plugins = [
   // the current value of the environment variable, that variable is set to
   // "true" when running the development server ("npm run server")
   // https://webpack.js.org/plugins/environment-plugin/
-  new webpack.EnvironmentPlugin({ WEBPACK_SERVE: null, LOCAL_CONNECTION: null }),
+  new webpack.EnvironmentPlugin({ WEBPACK_SERVE: null, LOCAL_CONNECTION: null, AGAMA_DEMO: null }),
 ].filter(Boolean);
 
 if (eslint) {
