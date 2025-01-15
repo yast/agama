@@ -1,5 +1,5 @@
 /*
- * Copyright (c) [2024] SUSE LLC
+ * Copyright (c) [2024-2025] SUSE LLC
  *
  * All Rights Reserved.
  *
@@ -29,6 +29,6 @@ it("renders label and content wrapped in div nodes using expected PatternFly sty
   plainRender(<FormReadOnlyField label="Product">Agama</FormReadOnlyField>);
   const field = screen.getByText("Agama");
   const label = screen.getByText("Product");
-  expect(field.classList.contains("pf-v5-c-form__group")).toBe(true);
-  expect(label.classList.contains("pf-v5-c-form__label-text")).toBe(true);
+  expect(field.classList.contains("pf-v6-c-form__group")).toBe(true);
+  expect(label.classList.contains("pf-v6-c-form__label-text")).toBe(true);
 });

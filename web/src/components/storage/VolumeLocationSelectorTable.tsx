@@ -1,5 +1,5 @@
 /*
- * Copyright (c) [2024] SUSE LLC
+ * Copyright (c) [2024-2025] SUSE LLC
  *
  * All Rights Reserved.
  *
@@ -21,7 +21,7 @@
  */
 
 import React from "react";
-import { Chip, Split } from "@patternfly/react-core";
+import { Content, Split } from "@patternfly/react-core";
 import { _ } from "~/i18n";
 import {
   DeviceName,
@@ -64,9 +64,7 @@ const DeviceUsage = ({ users }: { users: string[] }) => {
   return (
     <Split hasGutter isWrappable>
       {users.map((user, index) => (
-        <Chip key={index} isReadOnly>
-          {user}
-        </Chip>
+        <Content key={index}>{user}</Content>
       ))}
     </Split>
   );
